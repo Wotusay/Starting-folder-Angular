@@ -1,8 +1,16 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./**/*"
+  ],
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -15,11 +23,15 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
-    "module": "es2020",
+    "module": "esnext",
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
-    ]
+    ],
+    "baseUrl": ".",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
