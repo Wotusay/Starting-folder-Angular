@@ -37,6 +37,8 @@ chrome-profiler-events*.json
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
+package-lock.json
+yarn.lock
 testem.log
 /typings
 
